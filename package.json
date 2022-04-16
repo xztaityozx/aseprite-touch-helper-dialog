@@ -1,0 +1,22 @@
+{
+  "name": "touch-helper-dialog",
+  "displayName": "Touch Helper Dialog",
+  "description": "Extra toolbar for 2in1",
+  "version": "0.1",
+  "author": {
+    "name": "xztaityozx",
+    "email": "taityonohibi@gmail.com",
+    "url": "https://github.com/xztaityozx"
+  },
+  "contributors": [],
+  "publisher": "xztaityozx",
+  "license": "MIT",
+  "categories": ["Scripts"],
+  "contributes": {
+    "scripts": [
+      {
+        "path": "./touch-helper-dialog.lua", "id": "touch-helper-dialog"
+      }
+    ]
+  }
+}
