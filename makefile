@@ -1,6 +1,6 @@
 SHELL = /bin/bash
 
-build: clean
+build:
 	mkdir -p ./build
 	zip build/touch-helper-dialog.zip ./{LICENSE,README.md,package.json,touch-helper-dialog.lua}
 	mv build/touch-helper-dialog.{zip,aseprite-extension}
