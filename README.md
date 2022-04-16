@@ -23,5 +23,26 @@ Download pre-build archive file from [GitHub Release](https://github.com/xztaity
 # アンインストール
 Asepriteの設定画面から`Touch Helper Dialog`を削除します
 
+# Usage
+## **Open Touch Helper Dialog**
+![](./img/usage-2.png)
+
+# Button Feature
+- `Undo`/`Redo`
+- `[+]/[-]`: Zoom In/Out
+- Change tool
+  - `B`: Pencil
+  - `E`: Eraser
+  - `I`: Eyedropper
+  - `V`: Move
+  - `H`: Hand
+  - `L`: Line
+  - `S+L`: Curve
+  - `G`: Bucket
+- Selection tool
+  - `Rect`: Rectangular Marquee
+  - `Wand`: Magic Wand
+  - `Copy`/`Paste`
+
 # LICENSE
 [MIT LICENSE](./LICENSE)
