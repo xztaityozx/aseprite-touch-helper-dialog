@@ -1,0 +1,25 @@
+name: Makefile CI
+
+on:
+  push:
+    tags: 'v*'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Make Aseprite extension
+      id: make
+      run: |
+        make release TAG="${GITHUB_REF##*/}"
+        echo ::set-output name=filename::"build/touch-helper-dialog-${GITHUB_REF##*/}.aseprite-extension"
+      
+    - name: Create release
+      uses: softprops/action-gh-release@v1
+      with:
+        body_path: CANGELOG.txt
+        files: ${{ steps.make.outputs.filename }}
